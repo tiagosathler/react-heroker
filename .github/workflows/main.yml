@@ -19,7 +19,7 @@ jobs:
           run: npx eslint .
 
         - name: executando o stylelint para verificar se a erros
-          run: npx stylelint .
+          run: npx stylelint "**/*.css"
 
         - name: run Jest tests
           run: npm test
